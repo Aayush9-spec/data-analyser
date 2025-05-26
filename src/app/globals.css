@@ -1,0 +1,198 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light Theme (Default) / Teal Theme */
+    --background: 0 0% 100%; /* White */
+    --foreground: 224 71.4% 4.1%; /* Dark Blue/Black */
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 224 71.4% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+    --primary: 165 70% 40%; /* Teal */
+    --primary-foreground: 0 0% 100%; /* White */
+    --secondary: 165 55% 30%; /* Darker Teal */
+    --secondary-foreground: 0 0% 100%; /* White */
+    --muted: 220 14.3% 95.9%; /* Very Light Gray */
+    --muted-foreground: 220 8.9% 46.1%; /* Medium Gray */
+    --accent: 220 14.3% 95.9%; /* Very Light Gray for accent bg */
+    --accent-foreground: 165 70% 35%; /* Teal for accent fg */
+    --destructive: 0 84.2% 60.2%; /* Red */
+    --destructive-foreground: 0 0% 98%; /* Light text for destructive */
+    --border: 220 13% 91%; /* Light Gray Border */
+    --input: 220 13% 91%; /* Light Gray Input BG */
+    --ring: 165 70% 35%; /* Teal for Focus Ring */
+    --radius: 0.5rem;
+
+    --chart-1: 165 70% 40%; /* Teal */
+    --chart-2: 165 55% 30%; /* Darker Teal */
+    --chart-3: 165 70% 55%; /* Lighter Teal */
+    --chart-4: 220 8.9% 60%; /* Medium Gray */
+    --chart-5: 220 8.9% 75%; /* Lighter Gray */
+
+    --sidebar-background: 220 14.3% 98%; /* Slightly off-white */
+    --sidebar-foreground: 224 71.4% 4.1%; /* Dark text */
+    --sidebar-primary: 165 70% 40%; /* Teal */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 220 13% 91%; /* Hover/active state - light gray */
+    --sidebar-accent-foreground: 165 70% 35%; /* Teal accent text on hover */
+    --sidebar-border: 220 13% 85%; /* Light gray border for sidebar */
+    --sidebar-ring: 165 70% 35%; /* Teal ring */
+  }
+
+  .dark {
+    /* Deep Black Theme */
+    --background: 0 0% 4%; /* Deep Black */
+    --foreground: 0 0% 98%; /* Near White */
+    --card: 0 0% 8%; /* Very Dark Gray, slightly off black */
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 4%; /* Deep Black */
+    --popover-foreground: 0 0% 98%;
+    --primary: 165 70% 48%; /* Bright Teal */
+    --primary-foreground: 0 0% 100%; /* White */
+    --secondary: 165 55% 38%; /* Darker Teal */
+    --secondary-foreground: 165 55% 88%; /* Light Teal Text */
+    --muted: 0 0% 15%; /* Dark Gray */
+    --muted-foreground: 0 0% 65%; /* Medium-Light Gray */
+    --accent: 0 0% 15%; /* Dark Gray for accent bg */
+    --accent-foreground: 165 70% 65%; /* Teal for accent fg */
+    --destructive: 0 70% 50%; /* Adjusted Red for Dark BG */
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 20%; /* Dark Gray Border */
+    --input: 0 0% 12%; /* Very Dark Gray Input BG */
+    --ring: 165 70% 45%; /* Bright Teal for Focus Ring */
+
+    --chart-1: 165 70% 48%; /* Bright Teal */
+    --chart-2: 165 55% 38%; /* Darker Teal */
+    --chart-3: 165 70% 65%; /* Lighter Teal */
+    --chart-4: 0 0% 50%; /* Medium Gray */
+    --chart-5: 0 0% 70%; /* Light Gray */
+    
+    --sidebar-background: 0 0% 2%; /* Even deeper black for sidebar */
+    --sidebar-foreground: 0 0% 95%; /* Light text */
+    --sidebar-primary: 165 70% 48%; /* Teal */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 0 0% 10%; /* Hover/active state */
+    --sidebar-accent-foreground: 165 70% 68%; /* Teal accent text on hover */
+    --sidebar-border: 0 0% 10%; /* Dark border for sidebar */
+    --sidebar-ring: 165 70% 48%; /* Teal ring */
+  }
+
+  .theme-ocean-blue {
+    --background: 210 40% 96%; /* Very Light Powder Blue */
+    --foreground: 210 30% 20%; /* Dark Slate Blue */
+    --card: 210 40% 100%; /* White */
+    --card-foreground: 210 30% 20%;
+    --popover: 210 40% 100%; /* White */
+    --popover-foreground: 210 30% 20%;
+    --primary: 200 85% 50%; /* Bright Sky Blue */
+    --primary-foreground: 210 40% 98%; /* Very Light Blue for text on primary */
+    --secondary: 200 70% 40%; /* Medium Sky Blue */
+    --secondary-foreground: 210 40% 98%; /* Very Light Blue for text on secondary */
+    --muted: 210 40% 92%; /* Light Grayish Blue */
+    --muted-foreground: 210 30% 55%; /* Medium Slate Blue */
+    --accent: 200 85% 90%; /* Light Sky Blue Accent BG */
+    --accent-foreground: 200 85% 40%; /* Bright Sky Blue Accent FG */
+    --destructive: 0 75% 55%; /* Softer Red */
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 30% 85%; /* Light Blueish Border */
+    --input: 210 30% 90%; /* Very Light Blueish Input */
+    --ring: 200 85% 45%; /* Bright Sky Blue for Focus Ring */
+
+    --chart-1: 200 85% 50%; 
+    --chart-2: 200 70% 40%;
+    --chart-3: 200 85% 65%;
+    --chart-4: 210 30% 65%;
+    --chart-5: 210 30% 80%;
+
+    --sidebar-background: 210 40% 92%; 
+    --sidebar-foreground: 210 30% 20%;
+    --sidebar-primary: 200 85% 50%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 200 85% 88%;
+    --sidebar-accent-foreground: 200 85% 40%;
+    --sidebar-border: 210 30% 80%;
+    --sidebar-ring: 200 85% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground; /* Ensure themed background and text color */
+    /* Removed Shutterstock background image properties */
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom cursor interactive element hint */
+[data-cursor-interactive="true"] {
+  cursor: none; /* Hide default cursor when custom cursor is active over it */
+}
+
+@layer utilities {
+  .text-shimmer {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(
+      -75deg,
+      hsl(var(--primary)) 30%,
+      hsl(var(--primary-foreground)) 50%,
+      hsl(var(--primary)) 70%
+    );
+    background-size: 200% auto;
+    animation: shimmer 2.5s linear infinite;
+  }
+
+  .shine-button {
+    @apply relative overflow-hidden;
+  }
+
+  .shine-button::before {
+    content: "";
+    @apply absolute top-0 w-3/4 h-full transform -skew-x-[25deg] transition-none;
+    left: -125%; 
+    background: linear-gradient(
+      to right,
+      hsla(var(--primary-foreground), 0) 0%,
+      hsla(var(--primary-foreground), 0.3) 50%, 
+      hsla(var(--primary-foreground), 0) 100%
+    );
+    z-index: 1; 
+  }
+
+  .shine-button:hover::before {
+    animation: shine-animation 0.75s ease-out;
+  }
+
+  @keyframes shine-animation {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 125%; 
+    }
+  }
+  
+  @keyframes lake-effect-scroll { 
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  @keyframes gradient-flow { 
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+}
+
+/* Hide footer when body has .no-footer class */
+body.no-footer footer {
+  display: none;
+}
