@@ -85,6 +85,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📞 Contact
 
-Aayush - [Your Email/Twitter Handle]
+Aayush - aayush03061102@gmail.com
 
 Project Link: [https://github.com/Aayush9-spec/data-analyser](https://github.com/Aayush9-spec/data-analyser)
